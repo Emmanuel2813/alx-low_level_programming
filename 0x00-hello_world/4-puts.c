@@ -3,10 +3,10 @@
 /**
  * main - Entry point
  *
- * description
+ * Description: Write a C program that prints exactly"Programming is like building a multilingual puzzle,followed by a new line"
  *
- * return (0)
- */*
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {

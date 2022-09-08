@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: Write a C program that prints exactly"Programming is like building a multilingual puzzle,followed by a new line"
+ * Description: C program that printswith put function
  *
  * Return: Always 0 (Success)
  */

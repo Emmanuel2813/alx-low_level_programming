@@ -1,2 +1,2 @@
 #!/bin/bash
-make $OFILE -E
+gcc $CFILE -o $OFILE

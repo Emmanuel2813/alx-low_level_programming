@@ -1,2 +1,2 @@
 #!/bin/bash
-make -E $OFILE
+make $OFILE -E

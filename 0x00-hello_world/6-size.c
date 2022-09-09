@@ -6,6 +6,7 @@
  * Description: using sizeof to print the size of various types.
  * Return: Always 0 (Successful)
  */
+
 int main(void)
 {
 	/* sizeof evaluates the size of a variable */

@@ -1,43 +1,48 @@
 #include <stdio.h>
 
 /**
- *main - print a num pair from 00-99 but no repeats (00 01, 00 02, 00 03,...)
- *Return: Always 0 (Success)
+ * main - Prints numbers between 00 to 99.
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int tens;
-	int ones;
-	int t;
-	int o;
+int i, e, g, h, op1, op2;
 
-	for (tens = '0'; tens <= '9'; tens++)
+i = e = g = h = 48;
+while (h < 58)
+{
+	g = 48;
+	while (g < 58)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
+		e = 48;
+		while (e < 58)
 		{
-			for (t = tens; t <= '9'; t++)
+			i = 48;
+			while (i < 58)
 			{
-				for (o = ones + 1; o <= '9'; o++)
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
 				{
-					putchar(tens);
-					putchar(ones);
+					putchar(h);
+					putchar(g);
 					putchar(' ');
-					putchar(t);
-					putchar(o);
-
-					if (!((tens == '9' && ones == '8') &&
-					      (t == '9' && o == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
+					putchar(',');
+					putchar(' ');
 				}
-				o = '0';
+				i++;
 			}
+			e++;
 		}
+		g++;
 	}
-	putchar('\n');
-
-	return (0);
+	h++;
+}
+putchar('\n');
+return (0);
 }

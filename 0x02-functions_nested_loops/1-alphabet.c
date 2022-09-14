@@ -1,18 +1,25 @@
 #include "main.h"
 /**
- * main - A function that prints alphabet.
- * Return: Always 0.
- * Description: The programme should return 0
+ * print_alphabet - Prints the alphabet in lowercase.
+ * Return: Always 0 (Success)
  */
-int main(void)
-{
-	char alpha = 'a';
 
-	while (alpha <= 'z')
+void print_alphabet(void)
+
+{
+
+	int i;
+
+
+
+	for (i = 97; i <= 122; i++)
+
 	{
-		putchar(alpha);
-		alpha++;
+
+		_putchar(i);
+
 	}
-	putchar('\n');
-	return (0);
+
+	_putchar('\n');
+
 }

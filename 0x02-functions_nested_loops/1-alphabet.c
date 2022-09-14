@@ -1,24 +1,17 @@
 #include "main.h"
 /**
- * main - Prints the alphabet in lowercase.
- * Return: Always 0 (Success)
+ * print_alphabet - prints alphabets from a-z
+ *
+ * Description - You can only use _putchar twice in your code
  */
 
-int main(void)
+void print_alphabet(void)
 {
+	char ch;
 
-	char alpha;
-
-
-
-	for (alpha = 97; alpha <= 122; alpha++)
-
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-
-		putchar(alpha);
-
+		_putchar(ch);
 	}
-
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }

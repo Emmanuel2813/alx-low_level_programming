@@ -8,7 +8,6 @@ int main(void)
 {
 	char alpha;
 	if (alpha >= 97 && alpha <= 122 && alpha >= 65 && alpha <= 90)
-
 	{
 		return (1);
 	}
@@ -17,5 +16,5 @@ int main(void)
 		return (0);
 	}
 	putchar ('\n');
-
+	return (0);
 }

@@ -1,32 +1,23 @@
-#include "main.h"
+include "main.h"
+
 
 /**
- * void print_most_numbers - print numbers from '0' to '9' but skip '2' and '4'
- * Return: Always 0 (Success)
+ * print_most_numbers - prints numbers between 0 to 9
+ * (neither 2 nor 4).
+ * Return: no return.
  */
 
-void print_most_numbers(void);
+void print_most_numbers(void)
 
 {
 
-	char ch = '0';
+	int ch;
 
-
-	while (ch <= '9')
+	for (ch = 48; ch < 58; ch++)
 
 	{
-
-		if ((ch != '2') && (ch != '4'))
-
-		{
+		if (ch != 50 && ch != 52)
 			_putchar(ch);
-
-		}
-
-		ch++;
-
 	}
-
 	_putchar('\n');
-
 }

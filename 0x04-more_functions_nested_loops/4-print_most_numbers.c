@@ -9,22 +9,21 @@ void print_most_numbers(void);
 
 {
 
-	int i = '0';
+	char ch = '0';
 
 
-
-	while (i <= '9')
+	while (ch <= '9')
 
 	{
 
-		if ((i != '2') && (i != '4'))
+		if ((ch != '2') && (ch != '4'))
 
 		{
-			_putchar(i);
+			_putchar(ch);
 
 		}
 
-		i++;
+		ch++;
 
 	}
 

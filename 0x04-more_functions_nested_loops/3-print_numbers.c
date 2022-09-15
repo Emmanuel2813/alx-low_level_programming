@@ -2,21 +2,18 @@
 
 /**
  * void print_numbers - A function that prints numbers (0 to 9).
- * Return: Always 0.
+ * Return: Always 0 (Successful)
  */
+
 void print_numbers(void)
 {
+	int i;
 
-	int ch;
-
-	for (ch = 48; ch < 58; ch++)
+	for (i = 48; i < 58; i++)
 
 	{
-
-		_putchar(ch);
-
+		_putchar(i);
 	}
 
 	_putchar('\n');
-
 }

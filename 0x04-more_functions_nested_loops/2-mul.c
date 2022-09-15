@@ -3,7 +3,7 @@
 /**
  * mul - Multiplies two integers
  * @a: first integer
- * @b: seconf integer
+ * @b: second integer
  * Return: Multiplication
  */
 

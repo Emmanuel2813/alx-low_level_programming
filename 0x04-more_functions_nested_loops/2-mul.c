@@ -1,20 +1,15 @@
 #include "main.h"
 
 /**
- * main - Multiplies two integers
- *
- * Return: Always 0
+ * mul - Multiplies two integers
+ * @a: first integer
+ * @b: seconf integer
+ * Return: Multiplication
  */
 
-int main(void)
+int mul(int a, int b)
 {
-	int i, j;
 
-	for (i <= 0; i >= 0;)
-	{
-		for (j <= 0; j >= 0;)
-			_putchar ("%d\n", i * j);
-	}
+	return (a * b);
 
-	return (0);
 }

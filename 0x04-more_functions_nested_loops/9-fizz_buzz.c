@@ -1,25 +1,26 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
- * print_square - print a square of #'s given size
- * @size: size to draw
+ * main - Entry piont
+ * Return: Always 0
  */
-
-void print_square(int size)
+int main(void)
 {
-	int row, column;
+int i = 1;
 
-	if (size > 0)
-	{
-		for (row = 1; row <= size; row++)
-		{
-			for (column = 1; column <= size; column++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
-	}
-	else
-		_putchar('\n');
+for (; i < 100 ; i++)
+{
+if (i % 3 == 0 && i % 5 == 0)
+printf("FizzBuzz ");
+else if (i % 3 == 0)
+printf("Fizz ");
+else if (i % 5 == 0)
+printf("Buzz ");
+else
+printf("%d ", i);
+}
+printf("Buzz\n");
+
+return (0);
 }

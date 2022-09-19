@@ -1,25 +1,19 @@
 #include"main.h"
 
 /**
- * puts_half - prints half of a string
+ * puts2 - prints every character of a string
  * @str: string parameter input
  * Return: nothing
  */
 
-void puts_half(char *str)
+void puts2(char *str)
 {
-	int l, n;
+	int i;
 
-	for (l = 0; str[l] != '\0'; ++l)
-		;
-	if (l % 2 == 0)
+	for (i = 0; str[i] != '\0'; ++i)
 	{
-		for (n = l / 2; str[n] != '\0'; ++n)
-			putchar(str[n]);
-	} else
-	{
-		for (n = ((l - 1) / 2) + 1; str[n] != '\0'; ++n)
-			putchar(str[n]);
+		if (i % 2 == 0)
+			_putchar(str[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 }

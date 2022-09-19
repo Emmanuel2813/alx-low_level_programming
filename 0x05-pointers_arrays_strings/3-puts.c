@@ -1,19 +1,18 @@
-#include <stdio.h>
-
-void _puts(char *);
+#include"main.h"
 
 /**
- * main - prints a string, followed by a newline to stdout
- *
- * Return: Always 0.
+ *  _puts - prints a string, followed by a newline to stdout
+ *  @str: string parameter to print
+ *  Return: nothing
  */
 
-int main(void)
-
+void _puts(char *str)
 {
-	char *str;
+	while (*str != '\0')
+	{
 
-	str = "Holberton!";
-	_puts(str);
-	return (0);
+		_putchar(*str + 0);
+		++str;
+	}
+	_putchar('\n');
 }

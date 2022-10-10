@@ -4,9 +4,9 @@
  * main - Entry point.
  *
  * Description: A program that prints the name of the file it was
- * compiled from folllowed by a new line.
+ *		compiled from, folllowed by a new line.
  *
- * return: Always 0.
+ * Return: Always 0.
  */
 
 int main(void)

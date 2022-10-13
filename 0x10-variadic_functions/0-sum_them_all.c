@@ -5,7 +5,7 @@
  *
  *  @n: number of parameters.
  *
- *  Return: Always 0(success).
+ *  Return: the sum.
  */
 int sum_them_all(const unsigned int n, ...)
 {

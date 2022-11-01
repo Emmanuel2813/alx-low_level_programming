@@ -46,6 +46,3 @@ All your header files should be include guarded
 Tip: always prefer using symbolic constants (POSIX) vs numbers when it makes sense. For instance read(STDIN_FILENO, ... vs read(0, ...
 
 As always, tasks are givem to test students level of understanding.
-
-Brenda Okonofua
-Alx student and software engineer in the making
